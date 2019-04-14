@@ -32,4 +32,4 @@ https://renovamen.github.io/Just-OI-ACM/ （修改自 [Hux Blog](https://github.
     - [CEOI2004 - 锯木厂选址](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Convex-Hull-Trick/CEOI2004-%E9%94%AF%E6%9C%A8%E5%8E%82%E9%80%89%E5%9D%80.cpp)
 
   - [数位动归 - Digit DP](https://github.com/Renovamen/Just-OI-ACM/tree/master/Dynamic-Programming/Digit-DP)
-    - [CQOI2013 - BZOJ3107 - 二进制a+b](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Digit-DP/CQOI2013-二进制a+b)
+    - [CQOI2013 - BZOJ3107 - 二进制a+b](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Digit-DP/CQOI2013-二进制a+b.cpp)
