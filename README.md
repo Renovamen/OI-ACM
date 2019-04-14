@@ -30,4 +30,5 @@ https://renovamen.github.io/Just-OI-ACM/ （修改自 [Hux Blog](https://github.
 
     - [ZJOI2007 - BZOJ1096 - 仓库建设](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Convex-Hull-Trick/ZJOI2007-%E4%BB%93%E5%BA%93%E5%BB%BA%E8%AE%BE.cpp)
     - [2010 ACM-ICPC 多校训练赛 - HDU3507 - Print Article](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Convex-Hull-Trick/HDU3507-Print-Article.cpp)
+    - [CEOI2004 - 锯木厂选址](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Convex-Hull-Trick/CEOI2004-%E9%94%AF%E6%9C%A8%E5%8E%82%E9%80%89%E5%9D%80.cpp)
 
