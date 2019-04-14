@@ -19,7 +19,7 @@ https://renovamen.github.io/Just-OI-ACM/ （修改自 [Hux Blog](https://github.
     - [USACO2012 March Silver - Landscaping](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Just-DP/USACO2012-March-Silver-Landscaping.cpp)
     - [BSOJ1744 - Selection](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Just-DP/bsoj1744-selection.cpp)
     - [BSOJ3077 - 游戏](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Just-DP/bzoj3077-游戏.cpp)
-    - [CEOI2011-Balloons](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Just-DP/CEOI2011-Balloons.cpp)
+    - [CEOI2011 - Balloons](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Just-DP/CEOI2011-Balloons.cpp)
   - [状态压缩 - State Compression](https://github.com/Renovamen/Just-OI-ACM/tree/master/Dynamic-Programming/State-Compression)
     - [SCOI2008 - BZOJ1076 - 奖励关](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/State-Compression/SCOI2008-HYSBZ1076-奖励关.cpp)
 
