@@ -113,4 +113,4 @@ for i=1 to n do
 
 ## 源码
 
-[View Source Codes on Github](https://github.com/Renovamen/Just-OI-ACM/tree/master/Dynamic-Programming/Convex-Hull-Trick/HDU3507-Print-Article)
+[View Source Codes on Github](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Convex-Hull-Trick/HDU3507-Print-Article.cpp)
