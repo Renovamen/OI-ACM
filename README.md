@@ -5,7 +5,7 @@ My solutions and explanations for OI & ACM problems.
 &nbsp;
 ## Blog
 
-The description, solution and source of each problem can be seen on [this blog](https://renovamen.github.io/Just-OI-ACM/) (adapted from [Hux Blog](https://github.com/Huxpro/huxpro.github.io)) 
+The description, solution and source of each problem can be seen on [this blog](https://oi-acm.renovamen.ink). 
 
 &nbsp;
 ## Problem List
