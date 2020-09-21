@@ -125,4 +125,4 @@ for i=1 to n do
 
 ## 源码
 
-[Github](https://github.com/Renovamen/Just-OI-ACM/blob/master/Dynamic-Programming/Convex-Hull-Trick/HDU3507-Print-Article.cpp)
+[Github](HDU3507-Print-Article.cpp)
