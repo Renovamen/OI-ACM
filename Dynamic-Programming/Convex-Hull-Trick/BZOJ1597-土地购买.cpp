@@ -20,15 +20,15 @@ bool cmp(node x, node y)
  
 double Slope(int x, int y)
 {  
-  return (double(f[y] - f[x]) / double(Land[x+1].b - Land[y+1].b));
+  return (double(f[y] - f[x]) / double(Land[x + 1].b - Land[y + 1].b));
 }
  
 void Init()
 {
   scanf("%lld", &N);
-  for(int i=1; i<=N; i++)scanf("%d%d", &L[i].a, &L[i].b);
-  sort(L+1, L+N+1, cmp);
-  for(int i=1; i<=N; i++)
+  for(int i = 1; i <= N; i++) scanf("%d%d", &L[i].a, &L[i].b);
+  sort(L + 1, L + N + 1, cmp);
+  for(int i = 1; i <= N; i++)
   {  
     while(n && Land[n].b <= L[i].b) n--;
     Land[++n] = L[i];
@@ -37,13 +37,13 @@ void Init()
  
 void Dp()
 {
-  int L=1, R=1, j;
-  for(int i=1; i<=n; ++)
+  int L = 1, R = 1, j;
+  for(int i = 1; i <= n; i++)
   {
-    while(L<R && Slope(q[L], q[L+1]) < Land[i].a) L++;
+    while(L < R && Slope(q[L], q[L+1]) < Land[i].a) L++;
     j = q[L];
-    f[i] = f[j] + (Land[j+1].b) * (Land[i].a);
-    while(L<R && Slope(q[R-1], q[R]) > Slope(q[R], i)) R--;
+    f[i] = f[j] + (Land[j + 1].b) * (Land[i].a);
+    while(L < R && Slope(q[R - 1], q[R]) > Slope(q[R], i)) R--;
     q[++R] = i;
   }
   printf("%lld\n", f[n]);

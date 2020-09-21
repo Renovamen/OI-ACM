@@ -30,27 +30,27 @@ ll Cal(int i, int j)
  
 int Erfen(int l, int r, int t, int x)
 {
-  int L=l, R=r, Mid;
+  int L = l, R = r, Mid;
   while(L < R)
   {
-    Mid = (L+R)>>1;
+    Mid = (L + R) >> 1;
     if(Cal(Mid,t) >= Cal(Mid,x)) R = Mid;
-    else L = Mid+1;
+    else L = Mid + 1;
   }  
-  if(L==r && Cal(L,x)>Cal(L,t))return L+1;
+  if(L == r && Cal(L,x) > Cal(L,t)) return L + 1;
   return L;
 }
  
 void Dp()
 {
-  int L=1, R=1;	
-  q[1].Sta=0, q[1].St=1, q[1].Ed=n;
+  int L = 1, R = 1;	
+  q[1].Sta = 0, q[1].St = 1, q[1].Ed = n;
   
-  for(int i=1; i<=n; i++)
+  for(int i = 1; i <= n; i++)
   {
-    while(L<R && q[L].Ed<i) L++;
+    while(L < R && q[L].Ed < i) L++;
     f[i] = Cal(i, q[L].Sta);
-    while(L<=R && Cal(q[R].St, i) <= Cal(q[R].St, q[R].Sta)) R--;
+    while(L <= R && Cal(q[R].St, i) <= Cal(q[R].St, q[R].Sta)) R--;
 
     if(L <= R)
     {
@@ -59,7 +59,7 @@ void Dp()
       {
         if(w > q[R].St)
         {
-          q[R].Ed = w-1;
+          q[R].Ed = w - 1;
           q[++R].St = w;
           q[R].Ed = n;
         }
@@ -74,9 +74,9 @@ void Dp()
 void Init()
 {
   scanf("%lld", &N);
-  for(int i=1; i<=N; i++) scanf("%d%d", &L[i].a, &L[i].b);
-  sort(L+1, L+N+1, cmp);
-  for(int i=N; i>=1; i--)
+  for(int i = 1; i <= N; i++) scanf("%d%d", &L[i].a, &L[i].b);
+  sort(L + 1, L + N + 1, cmp);
+  for(int i = N; i >= 1; i--)
   if(L[i].b > Land[n].b)
   {
     Land[++n].b = L[i].b;
