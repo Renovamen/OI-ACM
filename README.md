@@ -14,10 +14,10 @@ The descriptions, solutions and sources of each problem can be seen on [this blo
 
 ## Problem List
 
-- [动态规划](Dynamic-Programming)
-  - [状态压缩](Dynamic-Programming/State-Compression)
-  - [背包问题](Dynamic-Programming/Knapsack-Problem)
-  - [斜率优化](Dynamic-Programming/Convex-Hull-Trick)
-  - [单调队列](Dynamic-Programming/Monotone-Queue)
-  - [数位动归](Dynamic-Programming/Digit-DP)
-  - [其他](Dynamic-Programming/Others)
+- [动态规划](code/动态规划)
+  - [状态压缩](code/动态规划/状态压缩)
+  - [背包问题](code/动态规划/背包问题)
+  - [斜率优化](code/动态规划/斜率优化)
+  - [单调队列](code/动态规划/单调队列)
+  - [数位动归](code/动态规划/数位动归)
+  - [其他](code/动态规划/其他)

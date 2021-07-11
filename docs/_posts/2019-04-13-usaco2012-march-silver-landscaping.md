@@ -86,7 +86,7 @@ $N$ 最大为 100，转换后最长为 1000，算法时间复杂度为 $O(n^2)$�
 
 ## Code
 
-[Github (C++)](https://github.com/Renovamen/OI-ACM/blob/master/Dynamic-Programming/Others/USACO2012-March-Silver-Landscaping.cpp){:.button.button--outline-info.button--rounded}{:target="_blank"}
+[Github (C++)](https://github.com/Renovamen/OI-ACM/blob/master/code/动态规划/其他/USACO2012-March-Silver-Landscaping.cpp){:.button.button--outline-info.button--rounded}{:target="_blank"}
 
 
 ```c++

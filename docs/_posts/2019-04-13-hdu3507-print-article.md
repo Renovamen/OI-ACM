@@ -165,7 +165,7 @@ for i=1 to n do
 
 ## Code
 
-[Github (C++)](https://github.com/Renovamen/OI-ACM/blob/master/Dynamic-Programming/Convex-Hull-Trick/HDU3507-Print-Article.cpp){:.button.button--outline-info.button--rounded}{:target="_blank"}
+[Github (C++)](https://github.com/Renovamen/OI-ACM/blob/master/code/动态规划/斜率优化/HDU3507-Print-Article.cpp){:.button.button--outline-info.button--rounded}{:target="_blank"}
 
 ```c++
 #include<iostream>

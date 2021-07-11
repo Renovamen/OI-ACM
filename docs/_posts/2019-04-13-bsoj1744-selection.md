@@ -71,7 +71,7 @@ $$
 
 ## Code
 
-[Github (C++)](https://github.com/Renovamen/OI-ACM/blob/master/Dynamic-Programming/Others/BSOJ1744-selection.cpp){:.button.button--outline-info.button--rounded}{:target="_blank"}
+[Github (C++)](https://github.com/Renovamen/OI-ACM/blob/master/code/动态规划/其他/BSOJ1744-selection.cpp){:.button.button--outline-info.button--rounded}{:target="_blank"}
 
 
 ```c++
