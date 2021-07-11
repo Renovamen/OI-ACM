@@ -9,9 +9,11 @@ tags:
 
 斜率优化：把决策与决策之间表示成一个类似斜率 $\frac{y_1-y_2}{x_1-x_2}$ 的式子，进一步分析其中的单调性，并用队列维护其有用决策。因此斜率优化又称队列优化。
 
+
 ## Problem
 
 Source: [HDU 3507](http://acm.hdu.edu.cn/showproblem.php?pid=3507){:target="_blank"}, 2010 ACM-ICPC 多校训练赛
+
 
 ### Description
 
@@ -23,16 +25,15 @@ $M$ is a const number.
 
 Now Zero want to know the minimum cost in order to arrange the article perfectly. 
 
+
 ### Input
 
 There are many test cases. For each test case, There are two numbers $N$ and $M$ in the first line $(0 ≤ n ≤ 500000, 0 ≤ M ≤ 1000)$. Then, there are $N$ numbers in the next $2$ to $N + 1$ lines. Input are terminated by EOF.
 
 
-
 ### Output
 
 A single number, meaning the mininum cost to print the article.
-
 
 
 ### Sample Input
@@ -47,7 +48,6 @@ A single number, meaning the mininum cost to print the article.
 ```
 
 
-
 ### Sample Output
 
 ```
@@ -55,16 +55,15 @@ A single number, meaning the mininum cost to print the article.
 ```
 
 
-
-&nbsp;&nbsp;
+&nbsp;
 
 ## Translation
 
 给出 $N (0 \leq N  \leq 500000)$ 个单词，每个单词有个非负权值 $C_i$，现要将它们分成连续的若干段，每段的代价为 $(\sum Ci)^2+M$，求最优方案，使得总费用最小。
 
 
+&nbsp;
 
-&nbsp;&nbsp;
 ## Solution
 
 可以很容易的得到一个 $O(N^2)​$ 的算法：
@@ -78,7 +77,6 @@ $f(i)$：将前 $i$ 个单词划分完毕后的最优值
 $$
 f(i) = \min \Big ( f(j) + (s(i)-s(j))^2 + M \Big) \quad (0 \leq j \leq i-1)
 $$
-
 
 但 $N$ 的范围是 $500000$，这个算法会超时，所以需要优化。
 
@@ -122,13 +120,11 @@ $$
 $$
 
 
-
 #### 结论 1
 
 对于 $i$ 的两个决策点 $j, k (j < k)$，决策 $k$ 优于决策 $j$ 就等价于 $\text{Slope}(j, k) < 2 \cdot s(i)$。换句话说，如果 $\text{Slope}(j, k) < 2 \cdot s(i)$，那么决策 $k$ 优于 $j$，反之决策 $j$ 不比 $k$ 差。
 
 我们还可以知道，决策点 $k$ 永远会比决策点 $j$ 优，因为对于 $i$ 以后的点 $i'$，一定有：$\text{Slope}(j, k) < 2 \cdot s(i) < 2 \cdot s(i')$（也就证明了较优决策点对后续状态影响的持续性）。因此这里的优劣应该是全局的，而不只限于 $i$。
-
 
 
 #### 结论 2
@@ -141,7 +137,6 @@ $$
 综上可知，如果 $\text{Slope}(j, k) > \text{Slope}(k, L)$，那么 $k$ 永远不会成为某个点的最优决策，是可以淘汰掉的。
 
 
-
 #### 队列的维护规则
 
 可以将决策放到一个队列中，利用以上两个结论剔除无用决策点，达到快速转移的目的。
@@ -151,7 +146,6 @@ $$
 1. 对于队首，如果 $\text{Slope}(q(h), q(h+1)) < 2 \cdot s(i)$，则 $q(h)$ 一定可以去掉，$h$++​；
 2. 事实上经过这样的调整后，$q(h)$ 就是 $i$ 的最优决策，直接取来更新 $f(i)$；
 3. $f(i)$ 加入队尾，并用 $i$ 去剔除无用决策。对于队列的尾部，如果 $\text{Slope}(q(t-1), q(t)) > \text{Slope}(q(t), i)$，那么 $q(t)$ 可以去掉，$t$- -。
-
 
 
 #### 算法框架
@@ -167,7 +161,6 @@ for i=1 to n do
 ```
 
 可以看到外层循环是 $O(N)$ 的，内层里每个元素进出队列仅一次，所以总效率为 $O(N)$。
-
 
 
 ## Code

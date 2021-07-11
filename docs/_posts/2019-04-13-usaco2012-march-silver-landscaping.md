@@ -4,10 +4,10 @@ tags:
   - 动态规划
 ---
 
+
 ## Problem
 
 Source: [USACO 2012 March Silver](http://www.usaco.org/index.php?page=viewproblem2&cpid=126){:target="_blank"}
-
 
 
 ### Description
@@ -15,19 +15,16 @@ Source: [USACO 2012 March Silver](http://www.usaco.org/index.php?page=viewproble
 Farmer John is building a nicely-landscaped garden, and needs to move a large amount of dirt in the process. The garden consists of a sequence of $N$ flowerbeds $(1 \leq N \leq 100)$, where flowerbed $i$ initially contains $A_i$ units of dirt.  Farmer John would like to re-landscape the garden so that each flowerbed $i$ instead contains $B_i$ units of dirt.  The $A_i$'s and $B_i$'s are all integers in the range $0 - 10$. To landscape the garden, Farmer John has several options: he can purchase one unit of dirt and place it in a flowerbed of his choice for $X$.  He can remove one unit of dirt from a flowerbed of his choice and have it shipped away for ​$Y$. He can also transport one unit of dirt from flowerbed $i$ to flowerbed $j$ at a cost of $Z$ times $\text{abs}(i-j)$.  Please compute the minimum total cost for Farmer John to complete his landscaping project.
 
 
-
 ### Input
 
 Line $1$: Space-separated integers $N$, $X$, $Y$, and $Z (0 \leq X, Y, Z \leq 1000)$.
 
-Lines $2..1+N​$: Line $i+1​$ contains the space-separated integers $A_i​$ and $B_i​$.
-
+Lines $2 \dots 1+N​$: Line $i+1​$ contains the space-separated integers $A_i​$ and $B_i​$.
 
 
 ### Output
 
 Line $1$: A single integer giving the minimum cost for Farmer John's landscaping project.
-
 
 
 ### Sample Input
@@ -41,7 +38,6 @@ Line $1$: A single integer giving the minimum cost for Farmer John's landscaping
 ```
 
 
-
 ### Sample Output
 
 ```
@@ -49,7 +45,8 @@ Line $1$: A single integer giving the minimum cost for Farmer John's landscaping
 ```
 
 
-&nbsp;&nbsp;
+&nbsp;
+
 ## Translation
 
 $N$ 个数排成一行，值分别为 $A_i$，现在希望把每个数对应地改成 $B_i$（$A_i, B_i$ 的值均在 0 - 10 之间）。改变的方式有 3 种：
@@ -64,8 +61,8 @@ $N$ 个数排成一行，值分别为 $A_i$，现在希望把每个数对应地�
 
 
 
+&nbsp;
 
-&nbsp;&nbsp;
 ## Solution
 
 由于数字范围小（$0-10$），所以可以把原始状态和目标状态换成另一种表示方式，如：
@@ -76,7 +73,6 @@ $N$ 个数排成一行，值分别为 $A_i$，现在希望把每个数对应地�
 这样该题就变为了标准的求字符串编辑距离（$A$ 串变成 $B$ 串的代价）动规。
 
 
-
 **状态转移方程：**
 
 $C(i,j)$：将 $A$ 串的前 $i$ 个变成 $B$ 串的前 $j$ 个的最小代价
@@ -85,9 +81,7 @@ $$
 C(i, j) = \min \Big( C(i - 1, j) + Y,     C(i, j - 1) + X,    C(i - 1, j - 1) + Z * \text{abs}(A[i] - B[j]) \Big)
 $$
 
-
 $N$ 最大为 100，转换后最长为 1000，算法时间复杂度为 $O(n^2)$。
-
 
 
 ## Code

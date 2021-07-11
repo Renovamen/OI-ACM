@@ -6,10 +6,10 @@ tags:
 ---
 
 
-
 ## Problem
 
 Source: BSOJ 1744
+
 
 ### Description
 
@@ -18,7 +18,6 @@ wind 发明了一个好玩的游戏，叫小杉一起玩。但小杉玩了十几
 这个游戏是这样的，wind 先写下一排数。既然是一排，当然有首尾咯。wind 和小杉每次只能从这排数的头或尾取一个数。最后谁取的数的和多，谁就赢了。
 
 假如你是小杉，请算出你最多能取到的和。wind 的智商是很高的（怪不得小杉一直输），你必须知道他总是做出最优决策。 
-
 
 
 ### Input
@@ -32,11 +31,9 @@ wind 发明了一个好玩的游戏，叫小杉一起玩。但小杉玩了十几
 第三行有 $n$ 个数，是 wind 给出的一排数，这 $n$ 个数均不超过 $1e6$
 
 
-
 ### Output
 
 对每组测试数据输出一行，仅有一个整数 $s$，表示小杉最多能取到多少数
-
 
 
 ### Sample Input
@@ -48,7 +45,6 @@ wind 发明了一个好玩的游戏，叫小杉一起玩。但小杉玩了十几
 ```
 
 
-
 ### Sample Output
 
 ```
@@ -56,9 +52,8 @@ wind 发明了一个好玩的游戏，叫小杉一起玩。但小杉玩了十几
 ```
 
 
+&nbsp;
 
-
-&nbsp;&nbsp;
 ## Solution
 
 $f(i,j)$：先取数的人在第 $i$ 个数到第 $j$ 个数之间能取到的最大和
@@ -74,11 +69,9 @@ $$
 解释：先取的人从 $i$ 到 $j$ 取得最大和的情况，要么是该人先取 $i$，加上 $i+1$ 到 $j$ 的总和，再减去对方先取时从 $i+1$ 到 $j$ 取得的最大和；或是该人先取 $j$，加上 $i$ 到 $j-1$ 的总和，再减去对方先取时从 $i$ 到 $j-1$ 取得的最大和（因为两人都按同一策略取）。
 
 
-
 ## Code
 
 [Github (C++)](https://github.com/Renovamen/OI-ACM/blob/master/Dynamic-Programming/Others/BSOJ1744-selection.cpp){:.button.button--outline-info.button--rounded}{:target="_blank"}
-
 
 
 ```c++
