@@ -1,0 +1,11 @@
+header:
+  - title: Home
+    url: /
+  - title: Archive
+    url: /archive.html
+  - title: OJ
+    url: /oj.html
+  - title: About
+    url: /about.html
+  - title: Leetcode
+    url: https://leetcode.renovamen.ink/

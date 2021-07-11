@@ -1,0 +1,23 @@
+---
+layout: page
+title: 404
+show_title: false
+---
+<div class="layout--404">
+  <div class="sign">
+    <h1 id="error-emoji"></h1>
+		<p>/* Oops! Where are we? */</p>
+    <p><a href="{{ site.baseurl }}/">$ cd /home/</a></p>
+  </div>
+</div>
+
+<script>
+	const emojis = [
+		'\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(^_^)b', '(╯‵□′)╯',
+		'(=\'X\'=)', '(>_<)', '\\(°ˊДˋ°)/', 'ㄟ(▔▽▔)ㄏ'
+	];
+  const errorEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+  document.getElementById('error-emoji').innerHTML = errorEmoji;
+</script>
+
+{{ content }}
