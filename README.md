@@ -1,13 +1,6 @@
-# Just OI and ACM
+# OI / ACM 题解
 
-My solutions and explanations for OI and/or ACM problems.
-
-
-&nbsp;
-
-## Blog
-
-The descriptions, solutions and sources of each problem can be seen on [this blog](https://oi.zxh.io). 
+题目描述、来源、题解等可以参考[这个博客](https://oi.zxh.io)。
 
 
 &nbsp;
